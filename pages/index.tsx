@@ -3,15 +3,21 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle,AiFillLinkedin,AiFillGithub,AiFillMail} from 'react-icons/ai'
 import Image from 'next/image';
 import deved from "../public/dev-abhi-wave.png";
-import design  from '../public/design.png';
 import code  from '../public/code.png';
 import consulting  from '../public/consulting.png';
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
+import Dataanalysis from '../public/Data analysis.jpg';
+import Numpy from '../public/Numpy.jpg';
+import Pandas from '../public/Data analysis.jpg';
+import Matplotlib from '../public/Data analysis.jpg';
+import Seaborn from '../public/Data analysis.jpg';
+import MachineLearning from '../public/Machine Learning.jpg';
+import ScikitLearn from '../public/Scikit Learn.jpg';
+import DeepLearning from '../public/Deep Learning.jpg';
+import Pytorch from '../public/Pytorch.jpg';
+import TensorFlow from '../public/TensorFlow.jpg';
+import NaturalLanguageProcessing from '../public/Natural Language Processing.jpg';
+import Spacy from '../public/spacy.jpg';
+import NLTK from '../public/NLTK.jpg';
 import { useState } from 'react';
 
 export default function Home() {
@@ -70,115 +76,78 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Skills:</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-            I have given talks and workshops such as Introduction To Visualization for Women Who Code and Drawing with Data Workshop at Airbnb APAC
-            <span className="text-teal-500 dark:text-white"> agencies </span>consulted for <span className="text-teal-500"> startups </span>
-            and collaborated with talented people to create for both business and consumer use.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white"> I offer from a wide range of services,including programming and teaching.
-            </p>
+             <h3 className="text-3xl py-1 dark:text-white">Skills :</h3>
           </div>
-          <div className="lg:flex gap-10 dark:text-white">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image alt=' ' src={design} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2"> Beautiful Designs</h3>
-              <p className="py-2"> Creating elegant designs suited for your needs following core design theory.
-              </p>
-              <h4 className=" py-4 text-teal-600">Design tools I use</h4>
-              <p className=" text-gray-800 py-1">Photoshop</p>
-              <p className=" text-gray-800 py-1">Illustrator</p>
-              <p className=" text-gray-800 py-1">figma</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 dark:text-white">
+            <div className="flex  flex-col items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+              <Image alt=' ' className="rounded-md" src={Dataanalysis} width={150} height={150} />
+              <h3 className=" text-gray-800 text-lg font-medium pt-8 pb-2"> Data Analysis Using </h3>
+              <p className=" text-gray-800 py-1 flex gap-2 items-center" >Numpy <Image alt=' ' src={"/Numpy.jpg"} width={30} height={30} /></p>
+              <p className=" text-gray-800 py-1 flex gap-2 items-center">Pandas <Image alt=' ' src={"/Pandas.jpg"} width={80} height={80} /></p>
+              <p className=" text-gray-800 py-1 flex gap-2 items-center">Matplotlib<Image alt=' ' src={"/Matplotlib.jpg"} width={80} height={80} /></p>
+              <p className=" text-gray-800 py-1 flex gap-2 items-center">Seaborn<Image alt=' ' src={"/seaborn.jpg"} width={50} height={50} /></p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image alt=' ' src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2"> Beautiful Designs</h3>
-              <p className="py-2"> Creating elegant designs suited for your needs following core design theory.
-              </p>
-              <h4 className=" py-4 text-teal-600">Design tools I use</h4>
-              <p className=" text-gray-800 py-1">Photoshop</p>
-              <p className=" text-gray-800 py-1">Illustrator</p>
-              <p className=" text-gray-800 py-1">figma</p>
+            <div className=" flex  flex-col items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+              <Image alt=' 'className="rounded-md" src={MachineLearning} width={150} height={150} />
+              <h3 className=" text-gray-800 text-lg font-medium pt-8 pb-2"> Machine Learning </h3>
+              <p className=" text-gray-800 py-1 flex gap-2 items-center">Scikit Learn<Image alt=' ' src={"/Scikit Learn.jpg"} width={120} height={120} /></p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className=" flex  flex-col items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+              <Image alt=' ' className="rounded-md" src={DeepLearning} width={150} height={150} />
+              <h3 className=" text-gray-800 text-lg font-medium pt-8 pb-2 "> Deep Learning Using </h3>
+              <p className=" text-gray-800 py-1 flex gap-2 items-center">PyTorch<Image alt=' ' src={"/Pytorch.jpg"} width={80} height={80} /></p>
+              <p className=" text-gray-800 py-1 flex gap-2 items-center">TensorFlow<Image alt=' ' src={"/TensorFLow.jpg"} width={80} height={80} /></p>
+            </div>
+            <div className=" flex  flex-col items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+              <Image alt=' ' src={NaturalLanguageProcessing} width={100} height={100} />
+              <h3 className="text-gray-800 text-lg font-medium pt-8 pb-2 "> NLP(Natural language Processing) Using</h3>
+              <p className=" text-gray-800 py-1 flex gap-2 items-center">NLTK<Image className="rounded-md" alt=' ' src={"/NLTK.jpg"} width={70} height={70} /></p>
+              <p className=" text-gray-800 py-1 flex gap-2 items-center">SpaCy<Image alt=' ' src={"/Spacy.jpg"} width={70} height={70} /></p>
+            </div>
+            <div className=" flex  flex-col items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image alt=' ' src={code} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 "> Beautiful Designs</h3>
-              <p className="py-2 dark:text-white"> Creating elegant designs suited for your needs following core design theory.
-              </p>
-              <h4 className=" py-4 text-teal-600">Design tools I use</h4>
-              <p className=" text-gray-800 py-1">Photoshop</p>
-              <p className=" text-gray-800 py-1">Illustrator</p>
-              <p className=" text-gray-800 py-1">figma</p>
+              <h3 className="text-gray-800 text-lg font-medium pt-8 pb-2 "> Programming & Data Structures</h3>
+              <p className=" text-gray-800 py-1">Python</p>
+              <p className=" text-gray-800 py-1">Java</p>
+              <p className=" text-gray-800 py-1">C++</p>
+            </div>
+            <div className=" flex  flex-col items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+              <Image alt=' ' src={code} width={100} height={100} />
+              <h3 className="text-gray-800 text-lg font-medium pt-8 pb-2 "> Web Development Using</h3>
+              <p className=" text-gray-800 py-1">HTML</p>
+              <p className=" text-gray-800 py-1">CSS</p>
+              <p className=" text-gray-800 py-1">Flask</p>
+              <p className=" text-gray-800 py-1">SQL</p>
+              <p className=" text-gray-800 py-1">mongoDB</p>
+            </div>
+            <div className=" flex  flex-col items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+              <Image alt=' ' src={code} width={100} height={100} />
+              <h3 className="text-gray-800 text-lg font-medium pt-8 pb-2 "> AWS</h3>
+              <p className=" text-gray-800 py-1">Numpy</p>
+            </div>
+            <div className=" flex  flex-col items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+              <Image alt=' ' src={code} width={100} height={100} />
+              <h3 className="text-gray-800 text-lg font-medium pt-8 pb-2 "> Other tools</h3>
+              <p className=" text-gray-800 py-1">git</p>
+              <p className=" text-gray-800 py-1">LINUX</p>
+              <p className=" text-gray-800 py-1">docker</p>
+              <p className=" text-gray-800 py-1">Terraform</p>
+              <p className=" text-gray-800 py-1">jupyter</p>
+              <p className=" text-gray-800 py-1">Visual Studio Code</p>
+              <p className=" text-gray-800 py-1">Pycharm</p>
             </div>
           </div>
         </section>
         <section> 
         <div> 
-         <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
+         <h3 className="text-3xl py-1 dark:text-white">Career :</h3>
          <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-            I have given talks and workshops such as Introduction To Visualization for Women Who Code and Drawing with Data Workshop at Airbnb APAC
-            <span className="text-teal-500"> agencies </span>consulted for <span className="text-teal-500"> startups </span>
-            and collaborated with talented people to create for both business and consumer use.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white"> I offer from a wide range of services,including programming and teaching.
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white"> 
             </p>
         </div>
         <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-          <div className="basis-1/3 flex-1">
-            <Image 
-            alt=' ' 
-            src={web1}
-            className="rounded-lg object-cover" 
-            width={'100%'} 
-            height={'100%'}
-            layout="responsive"/>
           </div>
-          <div className="basis-1/3 flex-1" >
-            <Image 
-            alt=' ' 
-            src={web2} 
-            className="rounded-lg object-cover"
-             width={'100%'} 
-             height={'100%'}
-              layout="responsive"/>
-          </div>
-          <div className="basis-1/3 flex-1">
-            <Image 
-            alt=' ' 
-            src={web3} 
-            className="rounded-lg object-cover" 
-            width={'100%'}
-             height={'100%'}
-              layout="responsive"/>
-          </div>
-          <div className="basis-1/3 flex-1">
-            <Image
-             alt=' ' 
-             src={web4} 
-             className="rounded-lg object-cover"
-              width={'100%'} 
-              height={'100%'} 
-              layout="responsive" />
-          </div>
-          <div className="basis-1/3 flex-1">
-            <Image
-             alt=' ' 
-             src={web5} 
-             className="rounded-lg object-cover" 
-             width={'100%'} 
-             height={'100%'} 
-             layout="responsive" />
-          </div>
-          <div className="basis-1/3 flex-1">
-            <Image 
-            alt=' ' 
-            src={web6} 
-            className="rounded-lg object-cover" 
-            width={'100%'} 
-            height={'100%'} 
-             layout="responsive"/>
-          </div>
-        </div>
         </section>
       </main>
     </div>
